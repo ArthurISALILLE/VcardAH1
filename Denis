@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="vCard pour partager vos informations personnelles">
+    <title>vCard de [Votre Nom]</title>
+    <style>
+        /* Style général de la page */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #111; /* fond noir */
+            color: white;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h1 {
+            color: #32CD32; /* vert clair */
+            font-size: 2.5em;
+            margin-top: 50px;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #bbb;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        /* Conteneur de la vCard */
+        .vcard-container {
+            background-color: #1d1d1d; /* légèrement plus clair que le fond */
+            width: 80%;
+            margin: 0 auto;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .vcard-container h2 {
+            color: #32CD32; /* vert clair */
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        /* Style du bouton de téléchargement */
+        .download-btn {
+            background-color: #32CD32; /* bouton vert */
+            color: white;
+            font-size: 1.1em;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+
+        .download-btn:hover {
+            background-color: #28a745; /* vert plus foncé lors du survol */
+        }
+
+        /* Réseaux sociaux */
+        .social-links {
+            margin-top: 40px;
+        }
+
+        .social-links a {
+            color: #32CD32; /* liens sociaux en vert */
+            font-size: 1.5em;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        .social-links a:hover {
+            color: white; /* effet au survol */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Bienvenue sur ma vCard</h1>
+
+    <div class="vcard-container">
+        <h2>[Votre Nom]</h2>
+        <p>Voici mes informations de contact, vous pouvez me télécharger ma vCard pour plus de détails.</p>
+
+        <a href="data:text/vcard;charset=utf-8,BEGIN:VCARD%0AVERSION:3.0%0AFN:[Votre Nom]%0AORG:[Votre Organisation]%0ATEL:[Votre Téléphone]%0AEMAIL:[Votre Email]%0AADR;TYPE=HOME:;;[Votre Adresse]%0AEND:VCARD" class="download-btn" download="vcard.vcf">
+            Télécharger ma vCard
+        </a>
+
+        <!-- Liens vers les réseaux sociaux -->
+        <div class="social-links">
+            <p>Suivez-moi sur :</p>
+            <a href="https://www.facebook.com/[VotrePage]" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com/[VotreProfil]" target="_blank">Instagram</a>
+        </div>
+    </div>
+
+</body>
+</html>
